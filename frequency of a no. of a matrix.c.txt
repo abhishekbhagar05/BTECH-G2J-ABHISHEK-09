@@ -1,0 +1,23 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rows = 3, cols = 3, target = 7;
+    int matrix[3][3] = { {7, 5, 2},
+                         {3, 7, 4},
+                         {7, 7, 1} };
+    int frequency = 0;
+
+    // Traverse the matrix
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            if (matrix[i][j] == target) {
+                frequency++;
+            }
+        }
+    }
+
+    cout << "Frequency of " << target << " is: " << frequency << endl;
+    return 0;
+}
